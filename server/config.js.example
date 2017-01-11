@@ -1,0 +1,45 @@
+module.exports = {
+	// Application settings. 
+	"port" : 3000,	
+	// SSL requires a cert and key to be placed in /server/ssl. It's highly recommended to use SSL since this
+	// Application will have access to the SPC alarm, and will likely be exposed on the internet. Without SSL, credentials are
+	// Sent in plain text over the network.
+	"use_ssl" : false,
+	// Credentials for accessing the web site.
+	"username" : "<spc-web-user>",
+	"password" : "<spc-web-password>",
+    
+	// Connection parameters for SPC Web Gateway
+	"spc_gw_host" : "192.168.0.220",
+	"spc_gw_port" : 8088,	
+	"spc_ws_user" : "<ws-user>",
+	"spc_ws_password" : "<ws-password>",
+	"spc_get_user" : "user",
+	"spc_get_password" : "<spc-get-password>",
+	"spc_put_user" : "user",
+	"spc_put_password" : "<spc-put-password>",	
+	"spc_use_ssl" : false,	
+	
+	// Notification settings.
+	"prowl_api_key" : "<key_goas_here>",	
+	"notification_subject" : "Alarm",
+	"notification_datetime_locale" : "en",
+	"notification_datetime_format" : "lll",	
+	"messages" : {       
+        "OG":"Area disarmed: {$1} ({$2})", 
+        "NL":"Area disarmed: {$1} ({$2})",  
+        "CG":"Area armed: {$1} ({$2})", 
+        "CL":"Area armed: {$1} ({$2})", 
+        "AT":"Mains power fault",
+        "AR":"Mains power restored",
+        "BA":"Alarm triggered: {$1}",
+        "BR":"Alarm restored: {$1}",
+        "BB":"Zone inhibited/isolated: {$1}",
+        "BU":"Zone deinhibited/deisolated: {$1}",      
+        "XT":"Battery low: {$1}",   
+        "XR":"Battery problem restored: {$1}",   
+        //"ZC":"Zone closed: {$1}",
+        //"ZO":"Zone opened: {$1}"       
+    }	 
+}
+

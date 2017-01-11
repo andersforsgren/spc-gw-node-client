@@ -1,0 +1,21 @@
+{
+  "name": "spc-gw-node-client",
+  "version": "1.0.0",
+  "description": "Client for SPC Web Gateway (http://www.lundix.se/smarta-losningar/) with mobile web access and push notifications",
+  "author": "Anders Forsgren <anders.forsgren@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/..."
+  },
+  "license": "MIT",
+  "dependencies": {
+    "connect": "^3.4.0",
+    "cryptojs": "^2.5.0",
+    "express": "^4.0.0",
+    "http-auth": "^2.2.8",
+    "moment": "^2.10.6",
+    "node-prowl": "^0.1.7",
+    "websocket": "^1.0.0",
+    "xmlhttprequest": "^1.7.0"
+  }
+}
